@@ -1,0 +1,15 @@
+<form [formGroup]="registrationForm">
+    <label>Username</label>
+    <input type="text" formControlName="username"><br>
+    <label>Email</label>
+    <input type="text" formControlName="email"><br>
+    <label>Password</label>
+    <input type="text" formControlName="password"><br>
+    <label>Registration Type</label>
+    <input type="text" formControlName="registrationType"><br>
+    <label>Profile</label>
+    <input type="text" formControlName="profilePicture"><br>
+    <label>Role id</label>
+    <input type="text" formControlName="roleId"><br>
+    <button (click)="submit()">Submit</button>
+</form>

@@ -1,0 +1,20 @@
+// _typography.scss
+@mixin font-roboto-regular($size: 14px) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: $size;
+}
+
+@mixin font-roboto-medium($size: 14px) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; // medium weight
+  font-size: $size;
+  line-height: 1.4;
+  color: inherit;
+}
+
+@mixin font-roboto-bold($size: 16px) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
