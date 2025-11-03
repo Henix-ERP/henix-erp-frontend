@@ -1,15 +1,47 @@
-<form [formGroup]="registrationForm">
-    <label>Username</label>
-    <input type="text" formControlName="username"><br>
-    <label>Email</label>
-    <input type="text" formControlName="email"><br>
-    <label>Password</label>
-    <input type="text" formControlName="password"><br>
-    <label>Registration Type</label>
-    <input type="text" formControlName="registrationType"><br>
-    <label>Profile</label>
-    <input type="text" formControlName="profilePicture"><br>
-    <label>Role id</label>
-    <input type="text" formControlName="roleId"><br>
-    <button (click)="submit()">Submit</button>
-</form>
+<div class="register-container">
+    <div class="banner">
+        <img src="assets/images/sidebar-image.jpg">
+    </div>
+    <div class="form-container">
+        <div class="inner-container">
+            <div class="inner-container__logo">
+                <img src="assets/icons/logo.svg" alt="">
+            </div>
+            <h1>Register</h1>
+            <p>Please enter your details to register</p>
+
+            <form [formGroup]="registrationForm">
+                <div class="form-control">
+                    <p>Username</p>
+                    <input type="text" formControlName="username">   
+                </div>
+                <div class="form-control">
+                    <p>Email Address</p>
+                    <input type="text" formControlName="email">    
+                </div>
+                <div class="form-control">
+                    <p>Password</p>
+                    <input type="text" formControlName="password">
+                </div>
+                <div class="form-control">
+                    <p>Registration Type</p>
+                    <input type="text" formControlName="registrationType">
+                </div>
+                <div class="form-control">
+                    <p>Profile</p>
+                    <input type="text" formControlName="profilePicture">
+                </div>
+                <div class="form-control">
+                    <p>Role</p>
+                    <input type="text" formControlName="roleId">
+                </div>
+                <div class="form-action">
+                    <button (click)="submit()">Register</button>
+                    <div class="form-action__login">
+                        <p>Already have an account? <span>Sign In</span></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

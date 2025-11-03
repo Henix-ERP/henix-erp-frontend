@@ -1,7 +1,54 @@
-<form [formGroup]="companyForm">
-    <label>Name</label>
-    <input type="text" formControlName="name">
-    <label>Domain name</label>
-    <input type="text" formContrlName="domainName">
-    <button (click)="submit()">Submit</button>
-</form>
+<div class="register-container">
+    <div class="banner">
+        <img src="assets/images/sidebar-image.jpg">
+    </div>
+    <div class="form-container">
+        <div class="inner-container">
+            <div class="inner-container__logo">
+                <img src="assets/icons/logo.svg" alt="">
+            </div>
+            <h1>Register Your Company</h1>
+            <p>Please enter your details to register</p>
+
+            <form [formGroup]="companyForm" *ngIf="firstStage">
+                <div class="form-control">
+                    <p>Company Name</p>
+                    <input type="text" formControlName="name">  
+                </div>
+                <div class="form-control">
+                    <p>Domain Name</p>
+                    <input type="text" formControlName="domainName">
+                </div>
+                <div class="form-action">
+                    <button (click)="next()">Next</button>
+                </div>
+            </form>
+
+            <form [formGroup]="registrationForm" *ngIf="!firstStage">
+                <div class="form-control">
+                    <p>Username</p>
+                    <input type="text" formControlName="username">   
+                </div>
+                <div class="form-control">
+                    <p>Email Address</p>
+                    <input type="text" formControlName="email">    
+                </div>
+                <div class="form-control">
+                    <p>Password</p>
+                    <input type="text" formControlName="password">
+                </div>
+                <div class="form-control">
+                    <p>Registration Type</p>
+                    <input type="text" formControlName="registrationType">
+                </div>
+                <div class="form-control">
+                    <p>Profile</p>
+                    <input type="text" formControlName="profilePicture">
+                </div>
+                <div class="form-action">
+                    <button (click)="submit()">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

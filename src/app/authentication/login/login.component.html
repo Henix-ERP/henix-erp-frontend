@@ -12,19 +12,21 @@
 
             <form [formGroup]="loginForm">
                 <div class="form-control">
-                    <label>Email Address</label>
+                    <p>Email Address</p>
                     <input type="text" formControlName="email">    
                 </div>
                 <div class="form-control">
-                    <label>Password</label>
+                    <p>Password</p>
                     <input type="text" formControlName="password">
                 </div>
                 <div class="form-action">
-                    <div class="form-action__remember-me">
+                    <div class="form-action__remfor">
+                        <div class="form-action__remfor__remember-me">
                         <input type="checkbox"><span>Remember me</span>
                     </div>
-                    <div class="form-action__forget-password">
+                    <div class="form-action__remfor__forget-password">
                         <p>Forgot Password?</p>
+                    </div>
                     </div>
                     <button (click)="submit()">Submit</button>
                     <div class="form-action__register">

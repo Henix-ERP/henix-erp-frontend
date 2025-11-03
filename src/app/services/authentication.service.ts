@@ -10,7 +10,7 @@ export class AuthenticationService {
   private authEndpoint = environment.authUrl;
   private headers = new HttpHeaders({
     'Content-Type': 'application/json',
-    'X-Company-Id': '1', // you can set dynamic later
+    'X-Company-Id': '2', // you can set dynamic later
   });
 
   constructor(
