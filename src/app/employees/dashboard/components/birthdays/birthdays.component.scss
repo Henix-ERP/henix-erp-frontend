@@ -1,0 +1,47 @@
+@use 'styles/typography' as *;
+
+.birthday-container {
+    background: black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    .header {
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+            color: #fff;
+            @include font-roboto-bold(19px);
+        }
+    }
+    .details {
+        .profile {
+            img {
+                width: 78px;
+                border-radius: 50%;
+            }
+        }
+        p {
+            color: #fff;
+            margin: 0;
+            margin-top: 5px;
+            @include font-roboto-medium(14px);
+        }
+        .designation {
+            p {
+                color: #cdcdcd;
+            @include font-roboto-regular(14px);
+            }
+        }
+        .action-btn {
+            padding: 10px;
+            button {
+                background: #F26522;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                height: 30px;
+                width: 160px;
+            }
+        }
+    }
+}

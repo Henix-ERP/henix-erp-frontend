@@ -1,0 +1,35 @@
+@use 'styles/typography' as *;
+
+.holiday-container {
+    background-color: #FFC107;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    .details {
+        color: #000;
+        h4 {
+            margin: 0;
+            @include font-roboto-medium(16px);
+        }
+        h5 {
+            margin: 0;
+            margin-top: 10px;
+            @include font-roboto-medium(18px);
+        }
+        p {
+            margin: 0;
+            @include font-roboto-regular(12px);
+        }
+    }
+    .action-btn {
+        button {
+            background: #fff;
+            border-radius: 5px;
+            color: #000;
+            border: none;
+            padding: 8px;
+        }
+    }
+}

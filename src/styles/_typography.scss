@@ -7,10 +7,8 @@
 
 @mixin font-roboto-medium($size: 14px) {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; // medium weight
+  font-weight: 600; // medium weight
   font-size: $size;
-  line-height: 1.4;
-  color: inherit;
 }
 
 @mixin font-roboto-bold($size: 16px) {
