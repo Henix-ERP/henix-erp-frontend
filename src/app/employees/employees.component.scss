@@ -1,5 +1,7 @@
 .employee-container {
     display: flex;
+    height: 100vh;
+    overflow: hidden;
     &__sidebar {
         max-width: 240px;
         min-width: 240px;
@@ -9,8 +11,16 @@
     }
     &__renderer {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
         &__header {
-            border-bottom: 1px solid rgb(209, 209, 209);;
+            flex-shrink: 0;
+            border-bottom: 1px solid rgb(209, 209, 209);
+        }
+        &__body {
+            flex: 1;
+            overflow-y: auto;
         }
     }
 }
