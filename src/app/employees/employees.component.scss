@@ -8,6 +8,7 @@
         height: 100vh;
         overflow: hidden;
         border-right: 1px solid rgb(209, 209, 209);
+        background: #fff;
     }
     &__renderer {
         width: 100%;
@@ -17,6 +18,7 @@
         &__header {
             flex-shrink: 0;
             border-bottom: 1px solid rgb(209, 209, 209);
+            background: #fff;
         }
         &__body {
             flex: 1;

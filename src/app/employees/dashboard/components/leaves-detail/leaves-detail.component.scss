@@ -1,0 +1,124 @@
+@use 'styles/typography' as *;
+
+.leaves-container {
+    display: flex;
+    gap: 10px;
+    h2 {
+        margin: 0;
+        @include font-roboto-bold(18px);
+    }
+    .leaves-chart {
+        border: 1px solid #E5E7EB;
+        box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+        border-radius: 5px;
+        min-width: 240px;
+        background: #fff;
+
+        &__header {
+            padding: 15px;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            p {
+                margin: 0;
+                @include font-roboto-medium(16px);
+            }
+        }
+        &__body {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            .leaves-donut-chart {
+                width: 220px;
+            }
+        }
+    }
+    .leaves-status {
+        border: 1px solid #E5E7EB;
+        box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+        border-radius: 5px;
+        min-width: 310px;
+        overflow: hidden;
+        background: #fff;       
+
+        &__header {
+            padding: 15px;
+            color: #fff;
+            background-color: #000;
+        }
+        &__body {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+            gap: 20px;
+
+            .leave-type {
+                margin-bottom: 10px;
+                h3 {
+                    margin: 0;
+                    margin-bottom: 15px;
+                    @include font-roboto-medium(16px);
+                }
+                p {
+                    margin: 0;
+                    margin-bottom: 2px;
+                    @include font-roboto-regular(14px);
+                }
+            }
+        }
+    }
+    .leaves-optional {
+        border: 1px solid #E5E7EB;
+        box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+        border-radius: 5px;
+        width: 100%;
+        overflow: hidden;
+
+        &__header {
+            padding: 15px;
+            color: #fff;
+            background-color: #000;
+        }
+    }
+    .leaves-history {
+        border: 1px solid #E5E7EB;
+        box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+        border-radius: 5px;
+        width: 100%;
+        overflow: hidden;
+        background: #fff;
+
+        &__header {
+            padding: 15px;
+            color: #fff;
+            background-color: #000;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                padding: 20px;
+                border-bottom: 1px solid #b9b9b9;
+                h4 {
+                    margin: 0;
+                    @include font-roboto-medium(16px);
+                }
+                .history-details {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                    p {
+                        margin: 0;
+                        @include font-roboto-regular(14px);
+                    }
+                }
+            }
+        }
+    }
+}

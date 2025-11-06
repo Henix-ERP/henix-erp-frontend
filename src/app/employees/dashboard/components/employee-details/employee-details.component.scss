@@ -2,9 +2,11 @@
 
 .employee-detail-container {
     width: 370px;
-    border: 1px solid #b9b9b9;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
     border-radius: 5px;
     overflow: hidden;
+    background: #fff;
 
     .header {
         background: #191919;
@@ -36,6 +38,10 @@
                     z-index: 6;
                     top: 10px;
                     right: 10px;
+                    img {
+                        filter: invert(1);
+                        width: 18px;
+                    }
                 }
             }
             &__designation {

@@ -1,3 +1,5 @@
+@use 'styles/typography' as *;
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -5,8 +7,17 @@
     padding: 10px 30px;
     .search-field {
         input {
-            height: 25px;
-            width: 320px;
+            height: 35px;
+            width: 360px;
+            @include font-roboto-regular(16px);
+            border: 1px solid rgb(174 174 174);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 1px 1px rgb(164 164 164 / 22%);
+
+            &:focus-visible {
+                outline: none;
+            }
         }
     }
     .header-actions {

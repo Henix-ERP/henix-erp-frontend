@@ -13,6 +13,9 @@ import { AnnouncementsComponent } from './dashboard/components/announcements/ann
 import { BirthdaysComponent } from './dashboard/components/birthdays/birthdays.component';
 import { PolicyUpdatesComponent } from './dashboard/components/policy-updates/policy-updates.component';
 import { HolidayUpdatesComponent } from './dashboard/components/holiday-updates/holiday-updates.component';
+import { LeavesDetailComponent } from './dashboard/components/leaves-detail/leaves-detail.component';
+import { NgChartsModule } from 'ng2-charts';
+import { AttendanceComponent } from './dashboard/components/attendance/attendance.component';
 
 
 @NgModule({
@@ -27,11 +30,14 @@ import { HolidayUpdatesComponent } from './dashboard/components/holiday-updates/
     AnnouncementsComponent,
     BirthdaysComponent,
     PolicyUpdatesComponent,
-    HolidayUpdatesComponent
+    HolidayUpdatesComponent,
+    LeavesDetailComponent,
+    AttendanceComponent,
   ],
   imports: [
     CommonModule,
-    EmployeesRoutingModule
+    EmployeesRoutingModule,
+    NgChartsModule
   ]
 })
 export class EmployeesModule { }

@@ -1,0 +1,82 @@
+<div class="leaves-container">
+    <div class="leaves-chart">
+        <div class="leaves-chart__header">
+            <h2>Leave Details</h2>
+            <p>2025</p>
+        </div>
+        <div class="leaves-chart__body">
+            <div style="display: block; margin: auto;" class="leaves-donut-chart">
+                <canvas
+                    baseChart
+                    [data]="doughnutChartData"
+                    [type]="doughnutChartType"
+                    [options]="doughnutChartOptions">
+                </canvas>
+            </div>
+
+        </div>
+    </div>
+    <div class="leaves-status">
+        <div class="leaves-status__header">
+            <h2>Leaves Status</h2>
+        </div>
+        <div class="leaves-status__body">
+            <div class="leave-type">
+                <h3>Paid Leaves</h3>
+                <p>Total: <span>10</span></p>
+                <p>Remaining: <span>10</span></p>
+            </div>
+            <div class="leave-type">
+                <h3>Sick Leaves</h3>
+                <p>Total: <span>10</span></p>
+                <p>Remaining: <span>10</span></p>
+            </div>
+            <div class="leave-type">
+                <h3>Cacual Leaves</h3>
+                <p>Total: <span>10</span></p>
+                <p>Remaining: <span>10</span></p>
+            </div>
+            <div class="leave-type">
+                <h3>Optional Leaves</h3>
+                <p>Total: <span>10</span></p>
+                <p>Remaining: <span>10</span></p>
+            </div>
+            <div class="leave-type">
+                <h3>Unpaid Leaves</h3>
+                <p>Total: <span>10</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="leaves-optional">
+        <div class="leaves-optional__header">
+            <h2>Optional Leaves</h2>
+        </div>
+        <ul>
+            <li>
+                <h4>Gandhi Jayanti</h4>
+                <p>02 Oct 2025</p>
+            </li>
+        </ul>
+    </div> -->
+    <div class="leaves-history">
+        <div class="leaves-history__header">
+            <h2>Applied Leaves</h2>
+        </div>
+        <ul>
+            <li>
+                <h4>Leave for Wedding</h4>
+                <div class="history-details">
+                    <p>3 Days, 20 Jan 2025 - 22 Jan 2025</p>
+                    <p>Approved</p>
+                </div>
+            </li>
+            <li>
+                <h4>Leave for Wedding</h4>
+                <div class="history-details">
+                    <p>3 Days, 20 Jan 2025 - 22 Jan 2025</p>
+                    <p>Approved</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
