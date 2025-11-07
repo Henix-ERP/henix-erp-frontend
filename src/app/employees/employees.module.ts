@@ -16,6 +16,9 @@ import { HolidayUpdatesComponent } from './dashboard/components/holiday-updates/
 import { LeavesDetailComponent } from './dashboard/components/leaves-detail/leaves-detail.component';
 import { NgChartsModule } from 'ng2-charts';
 import { AttendanceComponent } from './dashboard/components/attendance/attendance.component';
+import { ProjectsComponent } from './dashboard/components/projects/projects.component';
+import { TeamMembersComponent } from './dashboard/components/team-members/team-members.component';
+import { SkillsComponent } from './dashboard/components/skills/skills.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { AttendanceComponent } from './dashboard/components/attendance/attendanc
     HolidayUpdatesComponent,
     LeavesDetailComponent,
     AttendanceComponent,
+    ProjectsComponent,
+    TeamMembersComponent,
+    SkillsComponent,
   ],
   imports: [
     CommonModule,

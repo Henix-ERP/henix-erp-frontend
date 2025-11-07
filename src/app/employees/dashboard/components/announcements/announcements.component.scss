@@ -12,18 +12,17 @@
         display: flex;
         justify-content: space-between;
         padding: 15px 15px;
-        border-bottom: 1px solid #b9b9b9;
-        background-color: black;
+        background-color: rgb(232 237 232);
         align-items: center;
         h1 {
             @include font-roboto-bold(20px);
             margin: 0;
-            color: #fff;
+            color: #000;
         }
         .add-annoucement {
             button {
-                background-color: #fff;
-                color: #000;
+                background-color: #000;
+                color: #fff;
                 border: none;
                 border-radius: 5px;
                 height: 30px;
