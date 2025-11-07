@@ -16,18 +16,82 @@
             <p>Punch In at 10:00 AM</p>
         </div>
     </div>
-    <div class="hour-status">
-        <div class="hour-status__this-week">
-            
+    <div class="daily-status">
+        <div class="hour-status">
+            <div class="hour-status__status">
+                <div class="hour-status__status__total">
+                    <p><span>8.6</span> / 9</p>
+                    <p>Total Hours...</p>
+                    <div class="hour-status-type">
+                        <img src="assets/images/up-arrow.png" alt="">
+                        <p>5% This Week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hour-status__status">
+                <div class="hour-status__status__total">
+                    <p><span>8.6</span> / 9</p>
+                    <p>Total Hours...</p>
+                    <div class="hour-status-type">
+                        <img src="assets/images/down-arrow.png" alt="">
+                        <p>5% Last Week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hour-status__status">
+                <div class="hour-status__status__total">
+                    <p><span>8.6</span> / 9</p>
+                    <p>Total Hours...</p>
+                    <div class="hour-status-type">
+                        <img src="assets/images/up-arrow.png" alt="">
+                        <p>5% Last Month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hour-status__status">
+                <div class="hour-status__status__total">
+                    <p><span>8.6</span> / 9</p>
+                    <p>Total Hours...</p> 
+                    <div class="hour-status-type">
+                        <img src="assets/images/up-arrow.png" alt="">
+                        <p>5% Overtime</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hour-status__last-week">
-
-        </div>
-        <div class="hour-status__last-month">
-
-        </div>
-        <div class="hour-status__overtime">
-
+        <div class="daily-loggin">
+            <div class="daily-loggin-hours">
+                <div class="daily-loggin-hours__status">
+                    <h6>Total Working Hours</h6>
+                    <p>12h 36m</p>
+                </div>
+                <div class="daily-loggin-hours__status">
+                    <h6>Total Productive Hours</h6>
+                    <p>12h 36m</p>
+                </div>
+                <div class="daily-loggin-hours__status">
+                    <h6>Total Break Hours</h6>
+                    <p>12h 36m</p>
+                </div>
+                <div class="daily-loggin-hours__status">
+                    <h6>Overtime</h6>
+                    <p>12h 36m</p>
+                </div>
+            </div>
+            <div class="daily-loggin-bar">
+                <div class="time-bar">
+                    <div class="time-bar__productive" [ngStyle]="{width: '120px'}"></div>
+                    <div class="time-bar__break" [ngStyle]="{width: '20px'}"></div>
+                    <div class="time-bar__productive" [ngStyle]="{width: '80px'}"></div>
+                    <div class="time-bar__break" [ngStyle]="{width: '50px'}"></div>
+                    <div class="time-bar__productive" [ngStyle]="{width: '150px'}"></div>
+                    <div class="time-bar__break" [ngStyle]="{width: '10px'}"></div>
+                    <div class="time-bar__productive" [ngStyle]="{width: '70px'}"></div>
+                    <div class="time-bar__overtime" [ngStyle]="{width: '50px'}"></div>
+                    <div class="time-bar__break" [ngStyle]="{width: '20px'}"></div>
+                    <div class="time-bar__overtime" [ngStyle]="{width: '40px'}"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -9,7 +9,7 @@
         background: linear-gradient(180deg, #FFF8F4 0%, #FFFFFF 100%);
         border: 1px solid #F26522;
         border-radius: 5px;
-        width: 240px;
+        min-width: 240px;
         h3 {
             @include font-roboto-medium(16px);
         }
@@ -19,6 +19,7 @@
         .attendance-bar {
             display: flex;
             justify-content: center;
+            margin: 20px 0;
             &__inner {
                 border-radius: 50%;
                 width: 140px;
@@ -57,4 +58,96 @@
             }
         }
     }
+    .daily-status {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .hour-status {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            &__status {
+                background: #fff;
+                border: 1px solid #E5E7EB;
+                box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+                border-radius: 5px;
+                padding: 20px;
+                width: 120px;
+                &__total {
+                    p {
+                        margin: 0;
+                        margin-bottom: 10px;
+                        @include font-roboto-regular(14px);
+                        span {
+                            @include font-roboto-medium(26px);
+                        }
+                    }
+                    .hour-status-type {
+                        border-top: 1px solid #b9b9b9;
+                        display: flex;
+                        gap: 10px;
+                        padding-top: 15px;
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                        p {
+                            margin: 0;
+                            @include font-roboto-regular(14px);
+                        }
+                    }
+                }
+            }
+        }
+        .daily-loggin {
+            background-color: #fff;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0px 1px 1px 1px rgba(198, 198, 198, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+            .daily-loggin-hours {
+                display: flex;
+                justify-content: space-between;
+
+                &__status {
+                    h6 {
+                        color: #888888;
+                        margin: 0;
+                        @include font-roboto-medium(14px);
+                    }
+                    p {
+                        margin: 0;
+                        margin-top: 5px;
+                        @include font-roboto-medium(18px);
+                    }
+                }
+            }
+            .daily-loggin-bar {
+                margin-top: 20px;
+                .time-bar {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2px;
+                    &__productive {
+                        background-color: rgb(8, 211, 8);
+                        height: 30px;
+                        border-radius: 3px;
+                    }
+                    &__break {
+                        background-color: #FFC107;
+                        height: 30px;
+                        border-radius: 3px;
+                    }
+                    &__overtime {
+                        background-color: rgb(22, 138, 240);
+                        height: 30px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+
 }
