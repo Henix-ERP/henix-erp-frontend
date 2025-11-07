@@ -19,6 +19,7 @@ import { AttendanceComponent } from './dashboard/components/attendance/attendanc
 import { ProjectsComponent } from './dashboard/components/projects/projects.component';
 import { TeamMembersComponent } from './dashboard/components/team-members/team-members.component';
 import { SkillsComponent } from './dashboard/components/skills/skills.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { SkillsComponent } from './dashboard/components/skills/skills.component'
     ProjectsComponent,
     TeamMembersComponent,
     SkillsComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,
