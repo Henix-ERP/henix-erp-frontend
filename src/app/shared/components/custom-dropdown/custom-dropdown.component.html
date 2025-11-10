@@ -1,0 +1,20 @@
+<div class="custom-container">
+    <div class="dropdown">
+        <div class="dropdown__value" (click)="toggleDropdown()">
+            <p class="dropdown__value__placeholder">Select</p>
+            <img src="assets/icons/dropdown-arrow-icon.svg" alt="">
+        </div>
+        <div class="dropdown__list" *ngIf="isOpen">
+            <div class="dropdown__list__items">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 1</li>
+                    <li>Option 1</li>
+                    <li>Option 1</li>
+                    <li>Option 1</li>
+                    <li>Option 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

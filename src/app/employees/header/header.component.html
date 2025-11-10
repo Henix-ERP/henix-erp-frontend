@@ -11,6 +11,35 @@
         </div>
         <div class="user-action">
             <img src="assets/icons/user-icon.svg" alt="">
+            <div class="user-action__dropdown">
+                <div class="profile-details">
+                    <div class="profile-details__user-image">
+                        <img src="assets/images/user-image.jpg" alt="">
+                    </div>
+                    <div class="profile-details__user-data">
+                        <h4>Hitesh Ahirwar</h4>
+                        <p>hiteshahirwar@gmail.com</p>
+                    </div>
+                </div>
+                <ul>
+                    <li (click)="userNavigation('profile')">
+                        <img src="assets/icons/profile-icon.svg" alt="">
+                        <p>My Profile</p>
+                    </li>
+                    <li>
+                        <img src="assets/icons/setting-icon.svg" alt="">
+                        <p>Settings</p>
+                    </li>
+                    <li>
+                        <img src="assets/icons/color-mode-icon.svg" alt="">
+                        <p>Dark Mode</p>
+                    </li>
+                </ul>
+                <div class="profile-logout">
+                    <img src="assets/icons/logout-icon.svg" alt="">
+                    <p>Logout</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

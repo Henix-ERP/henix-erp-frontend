@@ -1,3 +1,82 @@
 <div class="profile-container">
-    
+    <div class="header">
+        <h2>Profile</h2>
+    </div>
+    <form>
+        <div class="basic-info">
+            <div class="basic-info__header">
+                <h4>Basic Information</h4>
+            </div>
+            <div class="basic-info__details">
+                <div class="basic-info__details__profile-image">
+                    <input type="file" hidden>
+                    <img src="assets/icons/upload-file-icon.svg" alt="">
+                    <div class="profile-image-content">
+                        <h2>Profile Picture</h2>
+                        <div class="profile-image-content__action">
+                            <button class="profile-image-content__action__upload">Upload</button>
+                            <button class="profile-image-content__action__cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="basic-info__details__inputs">
+                    <div class="first-row-inputs">
+                        <div class="form-control">
+                            <label>First Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-control">
+                            <label>Last Name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="second-row-inputs">
+                        <div class="form-control">
+                            <label>Email Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-control">
+                            <label>Phone Number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="address-info">
+            <div class="address-info__header">
+                <h4>Address Information</h4>
+            </div>
+            <div class="address-info__details">
+                <div class="address-info__details__inputs">
+                    <div class="first-row-inputs">
+                        <div class="form-control address-class">
+                            <label>Address</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="second-row-inputs">
+                        <div class="form-control">
+                            <label>Country</label>
+                            <app-custom-dropdown></app-custom-dropdown>
+                        </div>
+                        <div class="form-control">
+                            <label>State</label>
+                            <app-custom-dropdown></app-custom-dropdown>
+                        </div>
+                    </div>
+                    <div class="third-row-inputs">
+                        <div class="form-control">
+                            <label>City</label>
+                            <app-custom-dropdown></app-custom-dropdown>
+                        </div>
+                        <div class="form-control">
+                            <label>Pincode</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>
