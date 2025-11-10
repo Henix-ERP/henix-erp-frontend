@@ -1,6 +1,6 @@
 <div class="request-leave-container">
     <div class="close-modal">
-        <img src="assets/icons/cancel-icon.svg" alt="">
+        <img src="assets/icons/cancel-icon.svg" alt="" (click)="closeDialog()">
     </div>
     <div class="header">
         <h2>Request Leave</h2>
@@ -11,27 +11,32 @@
                 <label>Subject</label>
                 <input type="text">
             </div>
-            <div class="form-control">
-                <label>Type</label>
-                <input type="text">
-            </div>
             <div class="leave-dates">
                 <div class="form-control start-date">
-                    <mat-form-field appearance="fill">
+                    <!-- <mat-form-field appearance="fill">
                         <mat-label>Start Date</mat-label>
                         <input matInput [matDatepicker]="picker">
                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
+                    </mat-form-field> -->
+                    <label>Start Date</label>
+                    <app-custom-datepicker (dateSelected)="onDateChange($event)"></app-custom-datepicker>
+
                 </div>
                 <div class="form-control end-date">
-                    <mat-form-field appearance="fill">
+                    <!-- <mat-form-field appearance="fill">
                         <mat-label>End Date</mat-label>
                         <input matInput [matDatepicker]="picker2">
                         <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                         <mat-datepicker #picker2></mat-datepicker>
-                    </mat-form-field>
+                    </mat-form-field> -->
+                    <label>End Date</label>
+                    <app-custom-datepicker (dateSelected)="onDateChange($event)" [minDate]="dummyMinDate"></app-custom-datepicker>
                 </div>
+            </div>
+            <div class="form-control">
+                <label>Type</label>
+                <input type="text">
             </div>
             <div class="form-control">
                 <label>Note</label>

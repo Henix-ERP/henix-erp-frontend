@@ -37,7 +37,7 @@ export class LeavesDetailComponent {
 
   requestLeave() {
     const dialogRef = this.dialog.open(RequestLeaveComponent, {
-      width: '450px',
+      width: '520px',
       data: { message: 'Hello from parent!' }
     });
 

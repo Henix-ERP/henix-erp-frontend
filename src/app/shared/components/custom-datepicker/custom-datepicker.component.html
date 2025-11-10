@@ -1,0 +1,28 @@
+<div class="datepicker-container">
+    <div class="input-wrapper" (click)="toggleCalendar()">
+        <input type="text" [value]="selectedDate ? (selectedDate | date:'yyyy-MM-dd') : ''" readonly
+            placeholder="Select Date" />
+        <img src="assets/icons/calender-icon.svg" alt="calendar icon" class="calendar-icon" />
+    </div>
+
+    <div class="calendar" *ngIf="showCalendar">
+        <div class="calendar-header">
+            <button type="button" (click)="prevMonth()">‹</button>
+            <span>{{ months[currentMonth] }} {{ currentYear }}</span>
+            <button type="button" (click)="nextMonth()">›</button>
+        </div>
+
+        <div class="calendar-body">
+            <div class="day-names">
+                <div *ngFor="let day of days">{{ day }}</div>
+            </div>
+            <div class="dates">
+                <div *ngFor="let date of calendarDates" (click)="!isPastDate(date) && date && selectDate(date)"
+                    [class.today]="isToday(date)" [class.selected]="isSelected(date)"
+                    [class.disabled]="isPastDate(date) || isDisabled(date)">
+                    {{ date ? date.getDate() : '' }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

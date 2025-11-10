@@ -10,7 +10,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class RequestLeaveComponent {
 
   @ViewChild('picker') picker!: MatDatepicker<Date>;
-  
+  dummyMinDate = new Date(2025, 11, 15); // 15 Nov 2025
+
   constructor(
     private dialogRef: MatDialogRef<RequestLeaveComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
@@ -27,4 +28,9 @@ export class RequestLeaveComponent {
   onDateClosed() {
 
   }
+
+  onDateChange(date: Date) {
+    console.log('Selected Date:', date);
+  }
+
 }
