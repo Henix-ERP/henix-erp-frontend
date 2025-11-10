@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-custom-dropdown',
@@ -7,6 +7,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 })
 export class CustomDropdownComponent {
 
+  @Input() items: any;
   isOpen = false;
 
   constructor(private eRef: ElementRef) {}

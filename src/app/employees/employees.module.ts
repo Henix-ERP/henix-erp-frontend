@@ -20,6 +20,12 @@ import { TeamMembersComponent } from './dashboard/components/team-members/team-m
 import { SkillsComponent } from './dashboard/components/skills/skills.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SharedModule } from '../shared/shared.module';
+import { RequestLeaveComponent } from './dashboard/components/request-leave/request-leave.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -40,12 +46,18 @@ import { SharedModule } from '../shared/shared.module';
     TeamMembersComponent,
     SkillsComponent,
     ProfileComponent,
+    RequestLeaveComponent
   ],
   imports: [
     CommonModule,
     EmployeesRoutingModule,
     NgChartsModule,
-    SharedModule
+    SharedModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatButtonModule
   ]
 })
 export class EmployeesModule { }

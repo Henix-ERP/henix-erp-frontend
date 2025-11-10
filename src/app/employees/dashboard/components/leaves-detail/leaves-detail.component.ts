@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ChartType, ChartData, ChartOptions } from 'chart.js';
+import { RequestLeaveComponent } from '../request-leave/request-leave.component';
 
 @Component({
   selector: 'app-leaves-detail',
@@ -30,4 +32,17 @@ export class LeavesDetailComponent {
       },
     },
   };
+
+  constructor(public dialog: MatDialog) {}
+
+  requestLeave() {
+    const dialogRef = this.dialog.open(RequestLeaveComponent, {
+      width: '450px',
+      data: { message: 'Hello from parent!' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog closed. Result:', result);
+    });
+  }
 }

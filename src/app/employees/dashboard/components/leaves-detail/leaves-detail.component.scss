@@ -97,6 +97,20 @@
             padding: 15px;
             color: #000;
             background-color: rgb(232 237 232);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                background-color: #000;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                height: 30px;
+                width: 140px;
+                text-align: center;
+                cursor: pointer;
+                @include font-roboto-regular(14px);
+            }
         }
         ul {
             list-style: none;

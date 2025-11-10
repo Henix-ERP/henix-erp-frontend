@@ -89,6 +89,7 @@
                         height: 45px;
                         outline: none;
                         padding: 10px 5px;
+                        resize: none;
                         @include font-roboto-regular(14px);
                     }
                 }
